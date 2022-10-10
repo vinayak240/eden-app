@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Modules from "./modules";
 
 function App() {

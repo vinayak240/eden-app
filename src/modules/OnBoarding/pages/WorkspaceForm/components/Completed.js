@@ -16,6 +16,8 @@ export default function Completed(props) {
       loop: false,
       autoplay: true,
     });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -1,17 +1,8 @@
-import React, { useEffect } from "react";
-import {
-  Navigate,
-  Route,
-  Routes,
-  useNavigate,
-  useParams,
-} from "react-router-dom";
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import OnBoarding from "./OnBoarding";
-import WorkspaceForm from "./OnBoarding/pages/WorkspaceForm";
 
 export default function Modules(params) {
-  const { formIdx } = useParams();
-
   return (
     <div>
       <Routes>

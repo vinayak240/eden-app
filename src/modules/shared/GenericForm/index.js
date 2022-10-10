@@ -45,6 +45,8 @@ export default function GenericForm(props) {
 
   useEffect(() => {
     setState({ ...state, ...formStore });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [JSON.stringify(formStore)]);
 
   return (

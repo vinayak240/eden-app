@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { FormFieldMappers, STORAGE_KEY } from "../../../constants";
+import { STORAGE_KEY } from "../../../constants";
 import GenericForm from "../../../shared/GenericForm";
 import Completed from "./components/Completed";
 import allForms from "./forms";
@@ -32,6 +32,8 @@ export default function WorkspaceForm() {
   useEffect(() => {
     let formStore = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
     setState({ ...state, ...formStore });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
