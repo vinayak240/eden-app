@@ -115,6 +115,9 @@
     .form_field {
         width: 85%;
     }
+    .form_heading {
+        margin-top: 2rem;
+    }
     .submit_btn {
         width: 75%;
     }
