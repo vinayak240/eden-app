@@ -1,0 +1,133 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 3.5rem;
+}
+
+.form_caption {
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+    font-family: 'Inter';
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.form_field {
+    margin: 15px auto 2rem auto;
+    width: 40%;
+}
+
+.form_label {
+    display: block;
+    margin-bottom: 7px;
+    font-family: 'Inter';
+    font-size: 0.785rem;
+    font-weight: 500;
+}
+
+.input_wrapper {
+    border: 1px solid lightgray;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form_input {
+    outline: none;
+    border: none;
+    padding: 8px;
+    font-family: 'Inter';
+    font-size: 0.785rem;
+}
+
+.input_prefix {
+    margin: 0px;
+    font-size: 0.785rem;
+    padding: 8px 12px;
+    border-right: 1px solid lightgray;
+    background: #e6e6e6;
+    font-family: 'Inter';
+    font-weight: 600;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.form_input:focus + .input_wrapper {
+    border: 2px solid black;
+}
+
+.input_caption {
+    font-size: 0.65rem;
+    margin-left: 3px;
+    color: gray;
+}
+
+.input_validation {
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 0.6rem;
+    color: red;
+}
+
+.submit_btn {
+    border: none;
+    background: #5a4ad1;
+    color: white;
+    padding: 14px 10px;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
+.check_animation {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 3rem;
+}
+
+.completed_cntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .form_field {
+       width: 50%;
+    }
+  }
+
+@media (max-width: 600px) {
+    .form_field {
+        width: 85%;
+    }
+    .submit_btn {
+        width: 75%;
+    }
+  }
+
+  @media (max-width: 270px) {
+    .form_field {
+        min-width: 12rem;
+    }
+    .form_heading, .form_caption {
+        min-width: 12rem;
+    }
+    .submit_btn {
+        min-width: 10rem;
+    }
+  }
