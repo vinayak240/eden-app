@@ -121,7 +121,7 @@
   }
 
   @media (max-width: 500px) {
-    .form_headingn {
+    .form_heading {
         font-size: 1.4rem;
     }
   }
