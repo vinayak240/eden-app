@@ -121,6 +121,12 @@
   }
 
   @media (max-width: 270px) {
+    .form_headingn {
+        font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 270px) {
     .form_field {
         min-width: 12rem;
     }
