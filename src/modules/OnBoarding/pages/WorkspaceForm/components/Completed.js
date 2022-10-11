@@ -34,7 +34,7 @@ export default function Completed(props) {
       <p className="form_caption">
         You have completed onboarding, You can start using Eden!
       </p>
-      <button className="submit_btn">Launch Eden</button>
+      <button className="submit_btn">Launch Eden!</button>
     </div>
   );
 }
